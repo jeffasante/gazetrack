@@ -302,11 +302,9 @@ def setup_models():
     
     # Copy Haar cascades from OpenCV
     cv2_data = cv2.data.haarcascades
-    face_cascade = os.path.join(cv2_data, 'haarcascade_frontalface_default.xml')
     eye_cascade = os.path.join(cv2_data, 'haarcascade_eye.xml')
     
     import shutil
-    shutil.copy(face_cascade, 'models/')
     shutil.copy(eye_cascade, 'models/')
     
     # Download dlib model if not exists
