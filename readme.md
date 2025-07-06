@@ -290,6 +290,7 @@ Typical performance on modern hardware:
 
 ### Model Setup Script
 
+
 ```python
 import cv2
 import os
@@ -324,6 +325,12 @@ def setup_models():
 if __name__ == "__main__":
     setup_models()
 ```
+
+Run this to fetch models.
+```python
+python get_models.py
+```
+
 
 ### Citations
 
@@ -376,4 +383,4 @@ if __name__ == "__main__":
 
 ## License
 
-MIT License - see LICENSE file for details.
+Licensed under the Apache License, Version 2.0. See the LICENSE file for details.
